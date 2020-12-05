@@ -21,40 +21,41 @@
 配置文件将会生成在``server/world/config``
 
 ### SkyBlock.json
+```
+{
 
-`{`
+    "player": {
 
-    `"player": {`
+        "DancingSnow": {
 
-        `"DancingSnow": {`
+            "island": "1",
 
-            `"island": "1",`
+            "UUID": "212c5e19-8d74-473c-9a8c-520a8d93cca0"
 
-            `"UUID": "212c5e19-8d74-473c-9a8c-520a8d93cca0"`
+        }
 
-        `}`
+    },
 
-    `},`
+    "pos": {
 
-    `"pos": {`
+        "example": {
 
-        `"example": {`
+            "X": 10,
 
-            `"X": 10,`
+            "Y": 100,
 
-            `"Y": 100,`
+            "Z": 1000,
 
-            `"Z": 1000,`
+            "statu": false,
 
-            `"statu": false,`
+            "color": "green"
 
-            `"color": "green"`
+        }
 
-        `}`
+    }
 
-    `}`
-    
-`}`
+}
+```
 
 ``player``意思为目前拥有岛屿的玩家
 
