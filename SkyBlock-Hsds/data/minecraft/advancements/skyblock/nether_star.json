@@ -1,0 +1,25 @@
+{
+    "parent": "skyblock/wither_skeleton_skill",
+    "display": {
+        "icon": {
+            "item": "nether_star"
+        },
+        "title": "下届之星",
+        "description": "击杀凋灵获得"
+    },
+    "criteria": {
+        "star":{
+            "trigger": "inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "nether_star"
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        ["star"]
+    ]
+}

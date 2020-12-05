@@ -1,0 +1,20 @@
+{
+  "type": "crafting_shaped",
+  "pattern": [
+    "XKX",
+    "K K",
+    "XKX"
+  ],
+  "key": {
+    "X": {
+      "item": "minecraft:nether_brick"
+    },
+    "K": {
+      "item": "minecraft:nether_wart"
+    }
+  },
+  "result": {
+    "item": "minecraft:red_nether_bricks",
+	"count":2
+  }
+}

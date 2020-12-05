@@ -1,0 +1,33 @@
+{
+    "parent": "skyblock/kill_mob",
+    "display": {
+        "icon": {
+            "item": "iron_ingot"
+        },
+        "title":{
+            "text": "铁！！！"
+        },
+        "description": {
+            "text": "从僵尸身上获取铁锭"
+        },
+        "announce_to_chat": true,
+        "frame": "task",
+        "hidden": false,
+        "show_toast": true
+    },
+    "criteria": {
+        "iron":{
+            "trigger": "inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "iron_ingot"
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        ["iron"]
+    ]
+}

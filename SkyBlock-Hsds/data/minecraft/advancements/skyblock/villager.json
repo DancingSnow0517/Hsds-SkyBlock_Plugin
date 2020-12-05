@@ -1,0 +1,23 @@
+{
+    "parent": "skyblock/kill_mob",
+    "display": {
+        "icon": {
+            "item": "villager_spawn_egg"
+        },
+        "title": "村民",
+        "description": "通过把僵尸村民救回获得村民",
+        "show_toast": true,
+        "hidden": false,
+        "frame": "task",
+        "announce_to_chat": true
+    },
+    "criteria": {
+        "villager":{
+            "trigger": "cured_zombie_villager",
+            "conditions": {}
+        }
+    },
+    "requirements": [
+        ["villager"]
+    ]
+}

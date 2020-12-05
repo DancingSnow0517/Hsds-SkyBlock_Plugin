@@ -1,0 +1,29 @@
+{
+    "parent": "skyblock/villager",
+    "display": {
+        "icon": {
+            "item": "emerald"
+        },
+        "title": "钱！钱！钱！！！",
+        "description": "与村民交易获取绿宝石",
+        "announce_to_chat": true,
+        "frame": "task",
+        "hidden": false,
+        "show_toast": true
+    },
+    "criteria": {
+        "emerald":{
+            "trigger": "inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "emerald"
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        ["emerald"]
+    ]
+}

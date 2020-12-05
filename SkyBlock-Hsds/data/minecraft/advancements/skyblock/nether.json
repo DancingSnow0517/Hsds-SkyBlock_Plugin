@@ -1,0 +1,25 @@
+{
+    "parent": "skyblock/lava",
+    "display": {
+        "icon": {
+            "item": "netherrack"
+        },
+        "title": "下届",
+        "description": "使用岩浆制作黑曜石再制作地狱门",
+        "show_toast": true,
+        "hidden": false,
+        "announce_to_chat": true,
+        "frame": "challenge"
+    },
+    "criteria": {
+        "nether":{
+            "trigger": "changed_dimension",
+            "conditions": {
+                "to": "the_nether"
+            }
+        }
+    },
+    "requirements": [
+        ["nether"]
+    ]
+}

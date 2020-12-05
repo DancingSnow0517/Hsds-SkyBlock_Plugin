@@ -1,0 +1,33 @@
+{
+    "parent":"skyblock/log",
+    "display": {
+        "icon": {
+            "item": "wooden_sword"
+        },
+        "title":{
+            "text": "简单武装"
+        },
+        "description": {
+            "text": "制作一把木剑"
+        },
+        "hidden": false,
+        "announce_to_chat": true,
+        "frame": "task",
+        "show_toast": true
+    },
+    "criteria": {
+        "sword":{
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item":"wooden_sword"
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        ["sword"]
+    ]
+}

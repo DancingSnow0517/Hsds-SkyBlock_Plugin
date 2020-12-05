@@ -1,0 +1,29 @@
+{
+    "parent": "skyblock/nether",
+    "display": {
+        "icon": {
+            "item": "wither_skeleton_skull"
+        },
+        "title": "阴森的骷髅头",
+        "description": "获得一个凋零骷髅头",
+        "show_toast": true,
+        "hidden": false,
+        "frame": "task",
+        "announce_to_chat": true
+    },
+    "criteria": {
+        "skull":{
+            "trigger": "inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "wither_skeleton_skull"
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        ["skull"]
+    ]
+}

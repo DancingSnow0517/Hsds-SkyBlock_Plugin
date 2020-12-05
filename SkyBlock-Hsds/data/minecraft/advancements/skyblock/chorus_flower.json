@@ -1,0 +1,29 @@
+{
+    "parent": "skyblock/emerald",
+    "display": {
+        "icon": {
+            "item": "chorus_flower"
+        },
+        "title": "紫颂花",
+        "description": "建筑方块+1\n通过与流浪商人交易获得",
+        "announce_to_chat": true,
+        "frame": "task",
+        "hidden": false,
+        "show_toast": true
+    },
+    "criteria": {
+        "chorus_flower":{
+            "trigger": "inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "chorus_flower"
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        ["chorus_flower"]
+    ]
+}

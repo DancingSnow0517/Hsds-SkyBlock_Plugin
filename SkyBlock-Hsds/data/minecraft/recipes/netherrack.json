@@ -1,0 +1,15 @@
+{
+    "type":"crafting_shapeless",
+    "ingredients": [
+        {
+            "item":"magma_block"
+        },
+        {
+            "item": "ice"
+        }
+    ],
+    "result": {
+        "item": "netherrack",
+        "count": 1
+    }
+}

@@ -1,0 +1,36 @@
+{
+    "parent": "skyblock/iron",
+    "display": {
+        "icon": {
+            "item": "water_bucket"
+        },
+        "title": "生命之源",
+        "description": "通过炼药锅装雨水获得水桶"
+    },
+    "criteria": {
+        "water":{
+            "trigger": "inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "water_bucket"
+                    }
+                ]
+            }
+        },
+        "cauldron":{
+            "trigger": "inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "cauldron"
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        ["water"],
+        ["cauldron"]
+    ]
+}

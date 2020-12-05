@@ -1,0 +1,33 @@
+{
+    "parent":"skyblock/root",
+    "display": {
+        "icon": {
+            "item": "oak_log"
+        },
+        "title": {
+            "text": "要致富，先撸树"
+        },
+        "description": {
+            "text": "获取橡木原木"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "get_log":{
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item":"oak_log"
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        ["get_log"]
+    ]
+}

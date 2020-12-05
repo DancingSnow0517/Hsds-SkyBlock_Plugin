@@ -1,0 +1,29 @@
+{
+    "parent":"skyblock/lava",
+    "display": {
+        "icon": {
+            "item": "cobblestone"
+        },
+        "title": "石器时代",
+        "description": "用岩浆和水制作刷石机",
+        "frame": "goal",
+        "announce_to_chat": true,
+        "hidden": false,
+        "show_toast": true
+    },
+    "criteria": {
+        "cobblestone":{
+            "trigger": "inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "cobblestone"
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        ["cobblestone"]
+    ]
+}

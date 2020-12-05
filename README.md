@@ -16,6 +16,16 @@
 
 重载MCDR
 
+### 数据包
+
+将整文件夹``SkyBlock-Hsds``放入``world``的``datapack``文件夹
+
+reload服务器
+
+数据包修改了进度，引导玩家游玩，添加了一些懒人合成（见xk的数据包）
+
+添加了9个线合成蜘蛛网，凋灵掉落下届合金碎片，末影人掉落末地石
+
 ## 配置
 
 配置文件将会生成在``server/world/config``
@@ -67,11 +77,11 @@
 
 ## Mod支持
 
-[Fabric | The home of the Fabric mod development toolchain. (fabricmc.net)](https://fabricmc.net/)用于加载Mods
+[Fabric](https://fabricmc.net/)用于加载Mods
 
-[Carpet - Mods - Minecraft - CurseForge](https://www.curseforge.com/minecraft/mc-mods/carpet)SkyBlockMOD加载需要
+[Carpet](https://www.curseforge.com/minecraft/mc-mods/carpet)SkyBlockMOD加载需要
 
-[skyrising/skyblock: Minecraft mod for empty world generation and new ways to get certain items (github.com)](https://github.com/skyrising/skyblock/)用于生成虚空地形但保留结构群戏和添加流浪商人配方
+[skyrising/skyblock](https://github.com/skyrising/skyblock/)用于生成虚空地形但保留结构群戏和添加流浪商人配方
 
 
 

@@ -1,0 +1,29 @@
+{
+    "parent": "skyblock/emerald",
+    "display": {
+        "icon": {
+            "item": "lava_bucket"
+        },
+        "title": "热腾腾的",
+        "description": "与流浪商人通过绿宝石购买岩浆",
+        "show_toast": true,
+        "hidden": false,
+        "frame": "task",
+        "announce_to_chat": true
+    },
+    "criteria": {
+        "lava_bucket":{
+            "trigger": "inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "lava_bucket"
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        ["lava_bucket"]
+    ]
+}

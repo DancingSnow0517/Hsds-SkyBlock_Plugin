@@ -1,0 +1,25 @@
+{
+    "parent": "skyblock/wither_skeleton_skill",
+    "display": {
+        "icon": {
+            "item": "netherite_scrap"
+        },
+        "title": "下届合金碎片",
+        "description": "击杀凋灵获得"
+    },
+    "criteria": {
+        "scrap":{
+            "trigger": "inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "netherite_scrap"
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        ["scrap"]
+    ]
+}
