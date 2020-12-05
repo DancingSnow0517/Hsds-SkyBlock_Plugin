@@ -23,7 +23,6 @@
 ### SkyBlock.json
 
 {
-
     "player": {
 
         "DancingSnow": {
@@ -53,7 +52,6 @@
         }
 
     }
-    
 }
 
 ``player``意思为目前拥有岛屿的玩家
