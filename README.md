@@ -22,37 +22,23 @@
 
 ### SkyBlock.json
 
-{
-    "player": {
-
-        "DancingSnow": {
-
-            "island": "1",
-
-            "UUID": "212c5e19-8d74-473c-9a8c-520a8d93cca0"
-
-        }
-
-    },
-
-    "pos": {
-
-        "example": {
-
-            "X": 10,
-
-            "Y": 100,
-
-            "Z": 1000,
-
-            "statu": false,
-
-            "color": "green"
-
-        }
-
-    }
-}
+`{`
+    `"player": {`
+        `"DancingSnow": {`
+            `"island": "1",`
+            `"UUID": "212c5e19-8d74-473c-9a8c-520a8d93cca0"`
+        `}`
+    `},`
+    `"pos": {`
+        `"example": {`
+            `"X": 10,`
+            `"Y": 100,`
+            `"Z": 1000,`
+            `"statu": false,`
+            `"color": "green"`
+        `}`
+    `}`
+`}`
 
 ``player``意思为目前拥有岛屿的玩家
 
