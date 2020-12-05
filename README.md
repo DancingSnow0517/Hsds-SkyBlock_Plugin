@@ -81,7 +81,7 @@ reload服务器
 
 [Carpet](https://www.curseforge.com/minecraft/mc-mods/carpet)SkyBlockMOD加载需要
 
-[skyrising/skyblock](https://github.com/skyrising/skyblock/)用于生成虚空地形但保留结构群戏和添加流浪商人配方
+[skyrising/skyblock](https://github.com/skyrising/skyblock/)用于生成虚空地形但保留结构群系和添加流浪商人配方
 
 
 
