@@ -212,7 +212,7 @@ def on_server_startup(server):
 
 def on_player_joined(server,player):
     global Message
-    if not ('_bot' in player):
+    if not ('_bot' in player.lower()):
         if player in config["player"]:
             server.execute('tellraw ' + player + ' {"text":"欢迎回来","color":"gold","bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false}')
             server.execute('tellraw '+ player + ' [{"text":"找不到你的岛屿？使用","color":"red","bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false},{"text":"!!island back","color":"light_purple","bold":false,"italic":false,"underlined":true,"strikethrough":false,"obfuscated":false,"clickEvent":{"action":"run_command","value":"!!island back"},"hoverEvent":{"action":"show_text","value":"单击执行"} },{"text":"回到你的岛屿","color":"red","bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false}]')
