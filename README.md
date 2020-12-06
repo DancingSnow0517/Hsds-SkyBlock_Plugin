@@ -67,7 +67,7 @@ reload服务器
 
 [skyrising/skyblock](https://github.com/skyrising/skyblock/)用于生成虚空地形但保留结构群系和添加流浪商人配方
 
-[BungeeCord](https://ci.md-5.net/job/BungeeCord/)蹦极段，用于盗版假人可加入
+[BungeeCord](https://ci.md-5.net/job/BungeeCord/)蹦极端，用于盗版假人可加入
 
 [Carpet-TIS-Addition](https://github.com/TISUnion/Carpet-TIS-Addition)用于自动给假人加上后缀``_bot``
 
