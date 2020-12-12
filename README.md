@@ -61,7 +61,7 @@ reload服务器
 
 ``color``代表岛屿的颜色，将用于队伍的颜色
 
-## Mod支持
+## 相关链接
 
 [Fabric](https://fabricmc.net/)用于加载Mods
 
