@@ -101,6 +101,8 @@ def on_user_info(server,info):
     if content == '!!reload':
         ReadConfig(server)
         CreatTeam(server)
+        for i in config["player"]:
+            JoinTeam(i,server)
     if content == '!!seed':
         server.execute('tellraw ' + player + ' [{"text":"种子：[","bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false},{"text":"-602119083159372943","color":"green","bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"clickEvent":{"action":"suggest_command","value":"-602119083159372943"},"hoverEvent":{"action":"show_text","value":"单击复制"}},{"text":"]","bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false}]')
     if '!!island' in content:
@@ -144,6 +146,8 @@ def on_user_info(server,info):
                         server.execute('tp ' + player + ' {0} {1} {2}'.format(str(config["pos"][config["player"][player]["island"]]["X"]),str(config["pos"][config["player"][player]["island"]]["Y"] + 1),str(config["pos"][config["player"][player]["island"]]["Z"])))
                         server.execute('gamemode survival ' + player)
                         server.tell(player,'§b传送成功！')
+                        config["player"][player]["spectator"] = False
+                        SaveConfig(server)
                     else:
                         server.tell(player,'§c你还没有加入岛屿')
                         server.execute('tp ' + player + ' 0 101 0')
@@ -196,6 +200,8 @@ def on_user_info(server,info):
                                         config["pos"][content.split(' ')[2]]["statu"] = True
                                         SaveConfig(server)
                     if content.split(' ')[1] == 'spectator':
+                        config["player"][player]["spectator"] = True
+                        SaveConfig(server)
                         server.execute('tp ' + player + ' {} {} {}'.format(str(config["pos"][content.split(' ')[2]]["X"]),str(config["pos"][content.split(' ')[2]]["Y"] + 1),str(config["pos"][content.split(' ')[2]]["Z"])))
                         server.execute('gamemode spectator ' + player)
                         server.execute('tellraw ' + player + ' [{"text":"使用","color":"yellow","bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false},{"text":"!!island back","color":"light_purple","bold":false,"italic":false,"underlined":true,"strikethrough":false,"obfuscated":false,"clickEvent":{"action":"run_command","value":"!!island back"},"hoverEvent":{"action":"show_text","value":"单击执行"}},{"text":"回到自己的岛屿","color":"yellow","bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false}]')
