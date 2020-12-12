@@ -63,7 +63,7 @@ reload服务器
 
 ## 相关链接
 
-[MCDR](https://github.com/Fallen-Breath/MCDReforged)MCDR,用于加载插件
+[MCDR](https://github.com/Fallen-Breath/MCDReforged)用于加载插件
 
 [Fabric](https://fabricmc.net/)用于加载Mods
 
